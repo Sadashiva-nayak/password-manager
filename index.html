@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="flex items-center justify-between list-none bg-[#808080] ">
+    <div class="font-bold">PassX</div>
+    <div class="elements flex items-center pr-8">
+        <li class="p-2">Home</li>
+        <li class="p-2">About</li>
+        <li class="p-2">Contact</li>
+    </div>
+    </nav> 
+    <section class="home mt-20 ml-20">
+        <h1 class="font-bold my-4">Password Manager</h1>
+        <div class="pb-5">Hello we are thrilled to have you here. Please enjoy our services</div>
+        <h2 class="font-bold pb-4">Your Password</h2>
+        <table id="table" class="border-2 border-black">
+            <tr class="">
+                <td class="font-bold px-2">Website</td>
+                <td class="font-bold px-2">Username</td>
+                <td class="font-bold px-2">Password</td>
+                <td class="font-bold px-2">Delete</td>
+             </tr>
+        </table>
+        <h2 class="font-bold py-4">Add Your password</h2>
+        <form action="/submit" method="post" class="flex-col flex">
+            <label for="Website">website</label>
+            <input class="border-2 border-black w-60 my-2" type="text" id="website" name="website">
+            <label for="Username">Username</label>
+            <input class="border-2 border-black w-60 my-2" type="text" id="username" name="Username">
+            <label for="Password">Password</label>
+            <input class="border-2 border-black w-60 my-2" type="password" id="password" name="password">
+            <button class="rounded-lg bg-gray-400 w-20 my-5 btn">Submit</button>
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
